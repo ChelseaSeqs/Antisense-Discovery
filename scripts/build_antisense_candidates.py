@@ -152,7 +152,7 @@ def add_sequences(candidates, genome):
 def parse_args():
     parser = argparse.ArgumentParser(description="Build antisense candidate regions around modified positions.")
     parser.add_argument('-r', "--ref", required=True, help="Reference genome/transcriptome FASTA file.",)
-    parser.add_argument('-i', "-input", required=True, help="Input TSV file containing modified positions.",)
+    parser.add_argument('-i', "--input", required=True, help="Input TSV file containing modified positions.",)
     parser.add_argument('-o', "--output", required=True, help="Output TSV file for antisense candidates.",)
     parser.add_argument("--chrom-col", type=int, default=0, help="Column index for chromosome/reference name in the input TSV.",)
     parser.add_argument("--pos-col", type=int, default=2, help="Column index for modification position in the input TSV.",)
