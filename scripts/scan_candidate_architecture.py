@@ -316,7 +316,7 @@ def scan_candidate_architecture(
 
 def parse_args():
     parser = argparse.ArgumentParser(description="Scan antisense candidate sequences for promoter-like motifs and intrinsic terminators.")
-    parser.add_argument('-i', "-input", required=True, help="Input TSV file from build_antisense_candidates.py",)
+    parser.add_argument('-i', "--input", required=True, help="Input TSV file from build_antisense_candidates.py",)
     parser.add_argument('-o', "--output", required=True, help="Output TSV file with promoter/terminator scan results.",)
     parser.add_argument("--promoter-window", type=int, default=120, help="Number of nt from the 5' end to scan for promoter motifs.",)
     parser.add_argument("--minus10-consensus", default="TATAAT", help="Consensus sequence for the -10 box.",)
